@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCalcie</title>
+</head>
+<body>
+
+    <!--Navbar Starts-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mail.html">Contact</a>
+        <a href="blog.html">blog</a>
+        <div class="animation start-home"></div>
+      </nav>
+  <!--Navbar Ends-->
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tvm1KsOiGUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">WebCalculator
+              <br class="hidden lg:inline-block">PureJava|HTML|CSS
+            </h1>
+            <p class="mb-8 leading-relaxed">A WebCalculaotr made from PureJava,Html & CSS You Can Import Anywhere With Hvaing A GlassMorphin Background!</p>
+            <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"><a href="https://drive.google.com/file/d/1DqkKxXw-LLhPZ9VW4Zg91rJrey-4VzuI/view?usp=sharing">ExternalCode</a></button>
+            <div class="flex justify-center">
+             <!-- <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">SourceCode</button>-->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Timer </title>
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="text-boxes">
+    <div class="text-box HTMLBox">
+      <div class="topic">HTML Code:</div>
+      <textarea id="HTMLBox" readonly >
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calculator</title>
+            <link rel="stylesheet" type="text/css"
+                href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+        <body>
+        
+            <div class="container">
+                <div class="display">
+                    <input id="screen" type="text" placeholder="0">
+                </div>
+        
+                <div class="btns">
+                    <div class="row">
+                        <button id="ce" onclick="backspc()">CE</button>
+                        <button onclick="fact()">x!</button>
+                        <button class="btn">(</button>
+                        <button class="btn">)</button>
+                        <button class="btn">%</button>
+                        <button id="ac" onclick="screen.value=''">AC</button>
+                    </div>
+        
+                    <div class="row">
+                        <button onclick="sin()">sin</button>
+                        <button onclick="pi()">π</button>
+                        <button class="btn">7</button>
+                        <button class="btn">8</button>
+                        <button class="btn">9</button>
+                        <button class="btn">÷</button>
+                    </div>
+        
+                    <div class="row">
+                        <button onclick="cos()">cos</button>
+                        <button onclick="log()">log</button>
+                        <button class="btn">4</button>
+                        <button class="btn">5</button>
+                        <button class="btn">6</button>
+                        <button class="btn">×</button>
+                    </div>
+        
+                    <div class="row">
+                        <button onclick="tan()">tan</button>
+                        <button onclick="sqrt()">√</button>
+                        <button class="btn">1</button>
+                        <button class="btn">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn">-</button>
+                    </div>
+        
+                    <div class="row">
+                        <button onclick="e()">e</button>
+                        <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span>
+                        </button>
+                        <button class="btn">0</button>
+                        <button class="btn">.</button>
+                        <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </body>
+        
+        </html>
+      </textarea>
+      <button id="HTMLButton">Copy Codes</button>
+    </div>
+    <div class="text-box CSSBox">
+      <div class="topic">CSS Code:</div>
+      <textarea id="CSSBox" readonly >
+        body {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          user-select: none;
+          background: #ecf0f3;
+      }
+  
+      .container {
+          margin-left: 1.8em;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+      }
+  
+      .content {
+          width: 100%;
+          margin-top: 1.7em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+  
+      .row button {
+          width: 60px;
+          height: 30px;
+          font-size: 16px;
+          border: none;
+          outline: none;
+          margin: 5px;
+          border-radius: 4px;
+          transition: .1s;
+          box-shadow: 5px 5px 8px #00000020,
+              -5px -5px 8px #ffff;
+      }
+  
+      .row button:hover {
+          box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+              inset -5px -5px 8px #fff;
+          background: #fff;
+      }
+  
+      .display #screen {
+          margin-bottom: .5em;
+          width: auto;
+          height: 70px;
+          font-size: 35px;
+          outline: none;
+          border: none;
+          text-align: right;
+          padding-right: .5em;
+          background: #ecf0f3;
+          border-radius: 6px;
+          box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #ffffff;
+      }
+  
+      #eval {
+          background: #33ccff;
+          color: #fff;
+          box-shadow: inset 5px 5px 8px #66d9ff,
+              inset -5px -5px 8px #00ace6;
+      }
+  
+      #eval:hover {
+          box-shadow: inset 5px 5px 8px #00ace6,
+              inset -5px -5px 8px #00ace6;
+      }
+  
+      #ac {
+          background: #33cc33;
+          color: #fff;
+      }
+  
+      #ac:hover {
+          box-shadow: inset 5px 5px 8px #2eb82e,
+              inset -5px -5px 8px #33cc33;
+      }
+  
+      #ce {
+          background: #ff3399;
+          color: #fff;
+      }
+  
+      #ce:hover {
+          box-shadow: inset 5px 5px 8px #e60073,
+              inset -5px -5px 8px #ff3399;
+      }
+      </textarea>
+      <button id="CSSButton">Copy Codes</button>
+    </div>
+    <div class="text-box JSBox">
+      <div class="topic">JavaScript Code:</div>
+      <textarea id="JSBox" readonly >
+        var screen = document.querySelector('#screen');
+    var btn = document.querySelectorAll('.btn');
+
+    /*============ For getting the value of btn, Here we use for loop ============*/
+    for (item of btn) {
+        item.addEventListener('click', (e) => {
+            btntext = e.target.innerText;
+
+            if (btntext == '×') {
+                btntext = '*';
+            }
+
+            if (btntext == '÷') {
+                btntext = '/';
+            }
+            screen.value += btntext;
+        });
+    }
+
+    function sin() {
+        screen.value = Math.sin(screen.value);
+    }
+
+    function cos() {
+        screen.value = Math.cos(screen.value);
+    }
+
+    function tan() {
+        screen.value = Math.tan(screen.value);
+    }
+
+    function pow() {
+        screen.value = Math.pow(screen.value, 2);
+    }
+
+    function sqrt() {
+        screen.value = Math.sqrt(screen.value, 2);
+    }
+
+    function log() {
+        screen.value = Math.log(screen.value);
+    }
+
+    function pi() {
+        screen.value = 3.14159265359;
+    }
+
+    function e() {
+        screen.value = 2.71828182846;
+    }
+
+    function fact() {
+        var i, num, f;
+        f = 1
+        num = screen.value;
+        for (i = 1; i <= num; i++) {
+            f = f * i;
+        }
+
+        i = i - 1;
+
+        screen.value = f;
+    }
+
+    function backspc() {
+        screen.value = screen.value.substr(0, screen.value.length - 1);
+    }
+              <span class="timer__part timer__part--minutes">00</span>
+              <span class="timer__part">:</span>
+              <span class="timer__part timer__part--seconds">00</span>
+              <button type="button" class="timer__btn timer__btn--control timer__btn--start">
+                <span class="material-icons">play_arrow</span>
+              </button>
+              <button type="button" class="timer__btn timer__btn--reset">
+                <span class="material-icons">timer</span>
+              </button>
+            `;
+          }
+        }
+        
+        new Timer(
+          document.querySelector(".timer")
+        );
+      </textarea>
+      <button id="JSButton">Copy Codes</button>
+    </div>
+    
+  </div>
+
+  <script>
+  // HTML BOx JS Code
+    let HTMLBox = document.getElementById("HTMLBox");
+    let HTMLButton = document.getElementById("HTMLButton");
+
+    HTMLButton.onclick = function() {
+      HTMLBox.select();
+      document.execCommand("copy");
+      HTMLButton.innerText = "Codes Copied"
+    }
+
+    // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function() {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Codes Copied"
+      }
+    // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function() {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Codes Copied"
+      }
+  </script>
+
+<style>
+  /* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.text-boxes{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.text-boxes .text-box{
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+.text-boxes .text-box .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: #265df2;
+  margin: 4px;
+}
+.text-boxes .text-box textarea{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+.text-boxes .text-box button{
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #265df2;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.text-boxes .text-box button:hover{
+  background: #0e4bf1;
+}
+@media (max-width: 400px) {
+  .text-boxes .text-box button{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// */
+
+</style>
+</body>
+</html>
+
+    
+</body>
+</html>
